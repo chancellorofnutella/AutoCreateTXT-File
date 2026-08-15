@@ -64,3 +64,7 @@ $archivePath = Split-Path -Parent $PSCommandPath
 $fileName = (Get-Date -Format 'MM.dd.yyyy') + '.txt'
 New-Item -ItemType File -Path (Join-Path $archivePath $fileName) -Force | Out-Null
 ```
+
+## Cloud Compatibility
+
+Want your notes to automatically back up to Google Drive, OneDrive, or Dropbox? See [README-Cloud.md](README-Cloud.md) for the cloud-compatible version of this script.
